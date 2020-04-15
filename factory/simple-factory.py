@@ -40,6 +40,14 @@ class Pizza(metaclass = ABCMeta):
 class CheesePizza(Pizza):
     def __init__(self):
         self.name = "Cheese Pizza"
+        
+class PepperoniPizza(Pizza):
+    def __init__(self):
+        self.name = "Pepperoni Pizza"
+        
+class ClamPizza(Pizza):
+    def __init__(self):
+        self.name = "Clam Pizza"
     
 class SimplePizzaFactory:
     
@@ -49,10 +57,10 @@ class SimplePizzaFactory:
         
         if pizza_type == "cheese":
             return CheesePizza()
-#        elif pizza_type == "pepperoni":
-#            return PepperoniPizza()
-#        elif pizza_type == "clam":
-#            return ClamPizza()
+        elif pizza_type == "pepperoni":
+            return PepperoniPizza()
+        elif pizza_type == "clam":
+            return ClamPizza()
         
     
 class PizzaStore:
@@ -72,5 +80,6 @@ class PizzaStore:
 
 if __name__ == '__main__':
     pf = SimplePizzaFactory()
-    PizzaStore(pf).orderPizza("cheese")
+    pizza_type = input("Enter the type of pizza you want:")
+    PizzaStore(pf).orderPizza(pizza_type)
     
