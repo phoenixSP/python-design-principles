@@ -1,0 +1,37 @@
+<fulfillmentToken fulfillmentType="loan" auth="user" xmlns="http://ns.adobe.com/adept">
+  <distributor>urn:uuid:501e16ca-f45c-4a0c-9a9f-8a270a9f2ed6</distributor>
+  <operatorURL>http://rps2images.ebscohost.com/fulfillment</operatorURL>
+  <transaction>s5240361:14366113:1171943:1586968984039:1933691113</transaction>
+  <expiration>2020-04-15T18:43:04-04:00</expiration>
+  <resourceItemInfo>
+    <resource>urn:uuid:da42fd96-21c1-42d8-b33b-59812891aeaa</resource>
+    <resourceItem>1</resourceItem>
+    <metadata>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Learning Python Design Patterns - Second Edition</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Giridhar, Chetan</dc:creator>
+      <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Packt Publishing</dc:publisher>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/pdf</dc:format>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+    </metadata>
+    <licenseToken>
+      <resource>urn:uuid:da42fd96-21c1-42d8-b33b-59812891aeaa</resource>
+      <permissions>
+        <display>
+          <until>2020-04-22T12:43:04-04:00</until>
+        </display>
+        <excerpt>
+          <until>2020-04-22T12:43:04-04:00</until>
+          <count initial="100"/>
+        </excerpt>
+        <print>
+          <until>2020-04-22T12:43:04-04:00</until>
+          <count initial="100"/>
+        </print>
+        <play>
+          <until>2020-04-22T12:43:04-04:00</until>
+        </play>
+      </permissions>
+    </licenseToken>
+  </resourceItemInfo>
+  <hmac>sQLjRiPSU6BwNcPy0plnNk4hAi0=</hmac>
+</fulfillmentToken>

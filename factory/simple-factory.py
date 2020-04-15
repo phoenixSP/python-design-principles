@@ -9,21 +9,23 @@ from abc import ABCMeta, abstractmethod
 
 #you can also use ABC, the difference is that you can use ABC using simple inheritance while ABCMeta needs to be specified using the metaclass tag
 class Pizza(metaclass = ABCMeta):
-    
+
     def __init__(self):
+        pass
         self.name = None
 #        self.dough = None
 #        self.sauce = None
-#        self.toppings = []
-        
+        self.toppings = []
+     
     def prepare(self):
         print("Preparing " + self.name)
+#        print("Preparing ")
         print("Tossing dough...")
         print("Adding sauce...")
-#        print("Adding toppings:")
-#        
-#        for topping in toppings;:
-#            print("    " + topping)
+        print("Adding toppings:")
+        
+        for topping in self.toppings:
+            print("    " + topping)
             
     def bake(self): 
         print("Bake for 25 minutes at 350")
@@ -39,15 +41,21 @@ class Pizza(metaclass = ABCMeta):
     
 class CheesePizza(Pizza):
     def __init__(self):
+        super().__init__()        
         self.name = "Cheese Pizza"
+        self.toppings.append("Grated Reggiano Cheese")
         
 class PepperoniPizza(Pizza):
     def __init__(self):
+        super().__init__()
         self.name = "Pepperoni Pizza"
+        self.toppings.append("Shredded Mozzarella Cheese")
         
 class ClamPizza(Pizza):
     def __init__(self):
+        super().__init__()
         self.name = "Clam Pizza"
+        self.toppings.append("Seafood Cheese")
     
 class SimplePizzaFactory:
     
@@ -82,4 +90,24 @@ if __name__ == '__main__':
     pf = SimplePizzaFactory()
     pizza_type = input("Enter the type of pizza you want:")
     PizzaStore(pf).orderPizza(pizza_type)
+    
+    
+    
+    
+    
+    
+#class Foo:
+#    temp1 = "lll"
+#    
+#    def __init__(self):
+#        self.temp = "experiment"
+#        
+#c1 = Foo()
+#print(c1.temp1)
+#Foo.temp1 = "Let's see"
+#
+#print(c1.temp1)
+#
+#c3 = Foo()
+#print(c3.temp1)
     
