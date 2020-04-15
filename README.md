@@ -1,2 +1,6 @@
 # python-design-principles
-Exercises for LinkedIn Python Design Principle Course
+
+
+References:
+1. Head First Design Pattern
+2. Learning Python Design Patterns
