@@ -92,22 +92,11 @@ if __name__ == '__main__':
     PizzaStore(pf).orderPizza(pizza_type)
     
     
+'''
+NOTES: I did not need to use abstract classes for this example because I was 
+not implementing anything in the child class. But ideally you should
+
+'''    
     
-    
-    
-    
-#class Foo:
-#    temp1 = "lll"
-#    
-#    def __init__(self):
-#        self.temp = "experiment"
-#        
-#c1 = Foo()
-#print(c1.temp1)
-#Foo.temp1 = "Let's see"
-#
-#print(c1.temp1)
-#
-#c3 = Foo()
-#print(c3.temp1)
+
     
