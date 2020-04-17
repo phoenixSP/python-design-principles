@@ -61,7 +61,7 @@ class NYPepperoniPizza(Pizza):
         self.name = "NY Style Sauce and Pepperoni Pizza"
         self.dough = "Thin Crust Dough"
         self.sauce = "Marinara Sauce"
-        self.toppings.append("Shredded Mozzarella Cheese")
+        self.toppings.append("Sliced Pepperoni")
         
 class NYClamPizza(Pizza):
     def __init__(self):
@@ -69,7 +69,7 @@ class NYClamPizza(Pizza):
         self.name = "NY Style Sauce and Clam Pizza"
         self.dough = "Thin Crust Dough"
         self.sauce = "Marinara Sauce"
-        self.toppings.append("Seafood Cheese")
+        self.toppings.append("Fresh Clams")
         
 class ChicagoCheesePizza(Pizza):
     def __init__(self):
@@ -77,7 +77,7 @@ class ChicagoCheesePizza(Pizza):
         self.name = "Chicago Style Deep Dish Cheese Pizza"
         self.dough = "Extra Thick Crust Dough"
         self.sauce = "Plum Tomato Sauce"
-        self.toppings.append("Grated Reggiano Cheese")
+        self.toppings.append("Mozzarella Cheese")
         
 class ChicagoPepperoniPizza(Pizza):
     def __init__(self):
@@ -85,7 +85,7 @@ class ChicagoPepperoniPizza(Pizza):
         self.name = "Chicago Style Deep Dish Pepperoni Pizza"
         self.dough = "Extra Thick Crust Dough"
         self.sauce = "Plum Tomato Sauce"
-        self.toppings.append("Shredded Mozzarella Cheese")
+        self.toppings.append("Pepperoni")
         
 class ChicagoClamPizza(Pizza):
     def __init__(self):
@@ -93,7 +93,7 @@ class ChicagoClamPizza(Pizza):
         self.name = "Chicago Style Deep Dish Clam Pizza"
         self.dough = "Extra Thick Crust Dough"
         self.sauce = "Plum Tomato Sauce"
-        self.toppings.append("Seafood Cheese")
+        self.toppings.append("Frozen Clams")
         
     
 class PizzaStore(metaclass = ABCMeta):
